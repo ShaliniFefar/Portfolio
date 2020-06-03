@@ -1,0 +1,117 @@
+body {
+    background-color: #66d4af;
+    padding: 30px;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#name {
+    width: 250px;
+    height: 40px;
+    position: relative;
+    animation-name: nameAnimation;
+    animation-duration: 6s;
+    animation-direction: reverse; 
+}
+
+@keyframes nameAnimation {
+    0%   {left:0px; right:0px;}
+    25%  {left:600px; right:0px;}
+    50%  {left:600px; right:600px;}
+    75%  {left:0px; right:600px;}
+    100% {left:0px; right:0px;}
+}
+ul.header li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+}
+
+ul.header {
+    background-color: #3d3a3a;
+    padding: 0;
+}
+
+ul.header li a {
+    color: #d4d4cb;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+}
+
+.content {
+    background-color: #FFF;
+    padding: 20px;
+}
+
+.img {
+    float: right;
+}
+
+#aboutMeHeading {
+    text-align: center;    
+    border: 1px solid #111;
+    background-color: #3d3a3a;
+    color:#d4d4cb;
+    cursor: pointer;
+    width: 480px;
+    padding: 0.5em;
+    
+}
+
+@keyframes aboutMeAnimation {
+    from {background-color: #3d3a3a;}
+    to {background-color: #66d4af;}
+    from {color: #d4d4cb;}
+    to {color: #3d3a3a;}
+  }
+  
+#aboutMeHeading:hover {
+    
+    animation-name: aboutMeAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform: rotateY(150deg);
+    transform: rotateY(300deg);
+}
+
+.aboutMeDiv {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#aboutMe{
+    padding: 30px;
+    margin: 20px;
+    border: solid 3px;;
+    overflow: hidden;
+    justify-content: left;
+    width: 400px;
+}
+
+.collapse {
+    display: none;
+  }
+  
+.collapse.in {
+    display: block;
+}
+
+.footer-div {
+    background-color: #3d3a3a;
+    color:#d4d4cb;
+    text-align: center;
+}
+
+.projectsList {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.projectItem {
+    
+}
